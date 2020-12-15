@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my website!"
+title: "Association GeBiCan"
 ---
 
 You're up and running!

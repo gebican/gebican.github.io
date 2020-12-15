@@ -7,17 +7,17 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "About"
+    - text: "Membres"
       icon: fa-user 
       href: about.html
-    - text: "CV"
+    - text: "Séminaires"
       icon: fa-file-pdf-o
       href: cv.html
-    - text: "Members"
+    - text: "Annuaire"
       icon: fa-rss
       href: https://gebican.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
   right:
-    - text: "Contact us"
+    - text: "Contact"
       icon: fa-envelope-o
       href: mailto:YOUREMAIL                    # CHANGE HERE 
     - text: "GitHub"

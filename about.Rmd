@@ -1,7 +1,7 @@
 ---
-title: "About me"
+title: "Présentation de GeBiCan"
 ---
 
-## Header
+## Missions
 
 Say more about you here.
