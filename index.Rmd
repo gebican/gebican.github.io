@@ -2,5 +2,6 @@
 title: "Association GeBiCan"
 ---
 
+This association aims at providing a support for research teams interested in genomics and bioinformatic approaches in oncology.
 
 Great things coming soon.
