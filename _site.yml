@@ -4,9 +4,6 @@ navbar:
   title: "GeBiCan"                             # CHANGE HERE
   type: inverse
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
     - text: "Members"
       icon: fa-user 
       href: about.html
@@ -14,7 +11,7 @@ navbar:
       icon: fa-calendar-alt
       href: https://gebican.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES     
     - text: "Tools"
-      icon: fa-rss
+      icon: fa-tool
       href: tools.html
   right:
     - text: "Contact"
