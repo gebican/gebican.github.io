@@ -4,6 +4,13 @@ output: html_document
 ---
 
 
-[Bile Duct Cancer (x datasets)](bileduct.html)
+Bile Duct Cancer (x datasets)
+
+* [CIT cohort (2 omics)](Data/BileDuctCancer/icc_cit.html)
+* TCGA
+
+
+
+Liver Cancer
 
 

@@ -10,6 +10,8 @@ navbar:
     - text: "Events"
       icon: fa-calendar-alt
       href: https://gebican.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES     
+    - text: "Data"
+      href: data.html
     - text: "Tools"
       icon: fa-tool
       href: tools.html

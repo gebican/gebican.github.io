@@ -4,6 +4,6 @@ output: html_document
 ---
 
 
-[Transcriptome (n=78 tumors + xx Non-tumor samples)](icc_cit_exp.html)
+[Transcriptome (n=78 tumors + 31 Non-tumor samples)](icc_cit_exp.html)
 
 Methylome (n)

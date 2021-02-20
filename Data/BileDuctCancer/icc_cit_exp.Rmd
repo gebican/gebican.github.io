@@ -1,0 +1,68 @@
+---
+title: "Transcriptomic Data"
+output: html_document
+---
+
+## Description of the dataset
+
+`Omics_type` = trancriptome
+
+`Technology` = Microarray Affymetrix HTA 2.0
+
+`Genome version` = hg19
+
+`Cancer_type` = Intrahepatic cholangiocarcinoma (ICC)
+
+`Cohort_size` = 78 tumors + 31 Non-tumor samples
+
+`Accession Number` = E-MTAB-6389 on Array Express
+
+## Preparation of the data
+
+`Featur filtering` = selection of probeset type 'Main'
+
+`Normalisation` = RMA
+
+`Log2 data` = yes
+
+`Aggregation` = Maximum of the Median Absolute Deviation (MAD)
+
+
+## Summary of the main clinico-molecular covariates
+
+The main clinical covariates are summarized in the following table:
+
+```{r clinic, echo=FALSE, message=FALSE, warning=FALSE}
+library(cit.utils)
+library(tableone)
+library(rgl)
+library(MASS)
+projectdir <- "D:/Users/JobS/Documents/Admin/Post_CIT/organisation_data/Biliary_Tract/ICC_CIT"
+sam <- read.table(file.path(projectdir, "sample_annot_ICC_CIT.txt"), sep="\t")
+
+file.sam <- file.path( "D:/Users/JobS/Documents/Projets/ICC", "RData", "icc.sam.annot_272s.RData")
+sam.annot <- cit.load(file.sam)
+
+vcli <- c("Sex", "Biomaterial.Disease.State", "Organism.Part.Disease.status",
+          "Infection.HBV", "Infection.HCV", "NASH", "Neoadjuvant.Chemotherapy.Performed",
+          "Cirrhosis", "Alcohol", "Cells.Fibrosis.Detected", "Cells.Necrosis.Detected",
+          "Invasion.Stage.VELIPI")
+catVar <- vcli
+S.G <-  rownames(sam.annot[which(sam.annot$Biomaterial.Disease.State ==  "Tumor" & 
+                                   sam.annot$Histology.Type != "Hepatocellular Carcinoma" &
+                                   !is.na(sam.annot$Oligo.cDNA.Array)),])
+S.NT <- rownames(sam.annot[which(sam.annot$Biomaterial.Disease.State ==  "Normal" & 
+                                   sam.annot$Histology.Type != "Hepatocellular Carcinoma" &
+                                   !is.na(sam.annot$Oligo.cDNA.Array)),])
+
+sam <- sam.annot[S.G,]
+table1 <- CreateTableOne(vars=vcli, data=sam, factorVars=catVar)
+
+table1
+```
+
+## Files
+
+Les 3 liens vers les tables à télécharger ?
+
+
