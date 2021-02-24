@@ -19,11 +19,18 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -37,11 +44,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -54,32 +56,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -89,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -109,40 +82,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -170,7 +116,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -182,7 +128,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -193,10 +139,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -208,7 +167,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -286,14 +244,14 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="about.html">
-    <span class="fa fa-user"></span>
+    <span class="fas fa-user"></span>
      
     Members
   </a>
 </li>
 <li>
   <a href="https://gebican.github.io/blog/">
-    <span class="fa fa-calendar-alt"></span>
+    <span class="fas fa-calendar-alt"></span>
      
     Events
   </a>
@@ -303,7 +261,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="tools.html">
-    <span class="fa fa-tool"></span>
+    <span class="fas fa-tool"></span>
      
     Tools
   </a>
@@ -312,14 +270,14 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:YOUREMAIL">
-    <span class="fa fa-envelope-o"></span>
+    <span class="fas fa-envelope-o"></span>
      
     Contact
   </a>
 </li>
 <li>
   <a href="https://github.com/gebican">
-    <span class="fa fa-github"></span>
+    <span class="fas fa-github"></span>
      
     GitHub
   </a>
@@ -329,7 +287,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -338,8 +296,15 @@ $(document).ready(function () {
 </div>
 
 
-<p>This association aims at providing a support for research teams interested in genomics and bioinformatic approaches in oncology.</p>
-<p>Great things coming soon.</p>
+<p><img src="logo_Gebican.png" width="25%" style="float:right; padding:10px" /></p>
+<div id="gebican-est-une-association-française-dont-lobjectif-principal-est-de-promouvoir-et-daider-la-recherche-en-bioinformatique-et-génomique-des-cancers." class="section level3">
+<h3>GeBiCan est une association française dont l’objectif principal est de promouvoir et d’aider la recherche en <strong>Bioinformatique et Génomique des cancers</strong>.</h3>
+<p>Ensemble, nous nous sommes fixés plusieurs objectifs :</p>
+<p><img src="index_files/figure-html/reseaurond.png" style="width:4.0%" /> Réunir et favoriser les <strong>contacts entre tous les acteurs de la recherche en oncologie</strong>. Nous favorisons les rencontres et les collaborations entre biologistes, bioinformaticiens, médecins, étudiants ou industriels, au travers de journées thématiques ou de workshops.</p>
+<p><img src="index_files/figure-html/datarond.png" style="width:4.0%" /> GeBiCan propose également un accès facilité aux <strong>données génomiques</strong> d’un panel de cancers, présentes sur plusieurs bases de données publiques.</p>
+<p><img src="index_files/figure-html/tools2.png" style="width:4.0%" /> Enfin, GeBiCan rassemble un ensemble d’<strong>applications</strong> et d’<strong>outils</strong> utiles à l’analyse de données génomiques.</p>
+<p>Si notre association vous intéresse, n’hésitez pas nous <a href="">contacter</a>.</p>
+</div>
 
 
 
@@ -368,7 +333,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

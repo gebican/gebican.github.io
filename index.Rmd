@@ -1,7 +1,32 @@
 ---
 title: "Association GeBiCan"
+output: html_document
+fontsize: 40pt
 ---
 
-This association aims at providing a support for research teams interested in genomics and bioinformatic approaches in oncology.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-Great things coming soon.
+```{r pressure3, echo=FALSE, out.width= "25%", out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("logo_Gebican.png")
+```
+
+
+
+### GeBiCan est une association française dont l’objectif principal est de promouvoir et d’aider la recherche en **Bioinformatique et Génomique des cancers**.
+
+Ensemble, nous nous sommes fixés plusieurs objectifs :
+
+![](index_files/figure-html/reseaurond.png){width=4%} Réunir et favoriser les **contacts entre tous les acteurs de la recherche en oncologie**. Nous favorisons les rencontres et les collaborations entre biologistes, bioinformaticiens, médecins, étudiants ou industriels, au travers de journées thématiques ou de workshops. 
+
+
+![](index_files/figure-html/datarond.png){width=4%} GeBiCan propose également un accès facilité aux **données génomiques** d’un panel de cancers, présentes sur plusieurs bases de données publiques. 
+
+
+![](index_files/figure-html/tools2.png){width=4%}  Enfin, GeBiCan rassemble un ensemble d'**applications** et d'**outils** utiles à l'analyse de données génomiques.
+
+
+Si notre association vous intéresse, n'hésitez pas nous [contacter]().
+
+
