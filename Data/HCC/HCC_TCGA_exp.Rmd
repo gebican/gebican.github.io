@@ -1,0 +1,54 @@
+---
+title: "Hepatocellular carcinoma, TCGA cohort"
+output: html_document
+---
+
+## Description of the dataset
+
+`Omics_type` = trancriptome
+
+`Technology` = RNA-seq
+
+`Genome version` = GRCh38
+
+`Cancer_type` = HCC
+
+`Cohort_size` = 286 tumors 
+
+## Preparation of the data
+
+`Feature filtering` = None
+
+`Normalisation` = UQ norm
+
+`Log2 data` = Yes
+
+`Aggregation` = None
+
+
+## Summary of the main clinico-molecular covariates
+
+The main clinical covariates are summarized in the following table:
+
+```{r clinic, echo=FALSE, message=FALSE, warning=FALSE}
+library(tableone)
+library(rgl)
+library(MASS)
+vcli <- c("race",  "gender", "history_neoadjuvant_treatment", "history_hepato_carcinoma_risk_factors", "tumor_grade",
+          "ajcc_pathologic_tumor_stage")
+sam <- read.table("D:/Users/JobS/Documents/Admin/Post_CIT/siteweb/gebican.github.io/Data/HCC/sample_annot_HCC_TCGA_exp.txt", sep="\t", header=T, fill=T, stringsAsFactors = F)
+S.HCC <- rownames(sam)
+sam <- sam[S.HCC,]
+table1 <- CreateTableOne(vars=vcli, data=sam, factorVars=vcli)
+```
+```{r clinicTable, echo=FALSE, message=FALSE, warning=FALSE}
+table1
+
+```
+
+## Files
+
+Download the following archive containing two text files : (HCC_TCGA_exp.zip)(https://github.com/gebican/gebican.github.io/tree/main/Data/HCC/HCC_TCGA_exp.zip)
+
+* A tab separated file withthe sample annotations
+* A tab separated file with the expression matrix 

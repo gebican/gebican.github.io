@@ -1,0 +1,8 @@
+---
+title: "HCC TCGA"
+output: html_document
+---
+
+[Transcriptome (n=286 tumors)](HCC_TCGA_exp.html)
+
+Methylome (n)

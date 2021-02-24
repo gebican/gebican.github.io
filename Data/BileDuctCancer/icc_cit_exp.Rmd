@@ -1,11 +1,11 @@
 ---
-title: "Transcriptomic Data"
+title: "Intrahepatic cholangiocarcinoma, CIT cohort"
 output: html_document
 ---
 
 ## Description of the dataset
 
-`Omics_type` = trancriptome
+`Omics_type` = Trancriptome
 
 `Technology` = Microarray Affymetrix HTA 2.0
 
