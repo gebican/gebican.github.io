@@ -34,7 +34,7 @@ The main clinical covariates are summarized in the following table:
 library(tableone)
 library(rgl)
 library(MASS)
-vcli <- c("race",  "gender", "history_neoadjuvant_treatment", "history_hepato_carcinoma_risk_factors", "tumor_grade",
+vcli <- c("race",  "gender",  "history_hepato_carcinoma_risk_factors", "tumor_grade",
           "ajcc_pathologic_tumor_stage")
 sam <- read.table("D:/Users/JobS/Documents/Admin/Post_CIT/siteweb/gebican.github.io/Data/HCC/sample_annot_HCC_TCGA_exp.txt", sep="\t", header=T, fill=T, stringsAsFactors = F)
 S.HCC <- rownames(sam)
