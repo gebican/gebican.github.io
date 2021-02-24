@@ -1,5 +1,5 @@
 ---
-title: "Hepatocellular carcinoma, TCGA cohort"
+title: "HCC, TCGA cohort"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ library(rgl)
 library(MASS)
 vcli <- c("race",  "gender",  "history_hepato_carcinoma_risk_factors", "tumor_grade",
           "ajcc_pathologic_tumor_stage")
-sam <- read.table("D:/Users/JobS/Documents/Admin/Post_CIT/siteweb/gebican.github.io/Data/HCC/sample_annot_HCC_TCGA_exp.txt", sep="\t", header=T, fill=T, stringsAsFactors = F)
+sam <- read.table("D:/Users/JobS/Documents/Admin/Post_CIT/siteweb/copy_data_pubic/HCC_TCGA_exp/sample_annot_HCC_TCGA_exp.txt", sep="\t", header=T, fill=T, stringsAsFactors = F)
 S.HCC <- rownames(sam)
 sam <- sam[S.HCC,]
 table1 <- CreateTableOne(vars=vcli, data=sam, factorVars=vcli)
@@ -48,7 +48,7 @@ table1
 
 ## Files
 
-Download the following archive containing two text files : (HCC_TCGA_exp.zip)(https://github.com/gebican/gebican.github.io/tree/main/Data/HCC/HCC_TCGA_exp.zip)
+Download the following archive containing two text files : [HCC_TCGA_exp.zip](https://github.com/gebican/gebican.github.io/tree/main/Data/HCC/HCC_TCGA_exp.zip)
 
 * A tab separated file withthe sample annotations
 * A tab separated file with the expression matrix 
