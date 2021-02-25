@@ -22,19 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -340,7 +329,75 @@ $(document).ready(function () {
 
 <div id="membres-fondateurs" class="section level2">
 <h2>Membres fondateurs</h2>
-<p>Say more about you here. plein de belles choses</p>
+<div class="row">
+<div class="col-md-4">
+<br><br>
+<center>
+<div class="figure">
+<img src="pictures/mira.png" style="width:50.0%" />
+
+</div>
+<strong>Mira AYADI</strong><br />
+Operational Director, CIT Program<br />
+Ligue Contre le Cancer Paris, France<br />
+<a href="members/members_ma.html">Read more</a>
+</center>
+</div>
+<div class="col-md-4">
+<br><br>
+<center>
+<div class="figure">
+<img src="pictures/yuna.png" style="width:50.0%" />
+
+</div>
+<p><strong>Yuna BLUM</strong><br />
+Research scientist, CNRS<br />
+GEO Team, IGDR Rennes, France<br />
+<a href="members/members_yb.html">Read more</a></p>
+</center>
+</div>
+<div class="col-md-4">
+<br><br>
+<center>
+<div class="figure">
+<img src="pictures/sylvie.png" style="width:50.0%" />
+
+</div>
+<strong>Sylvie JOB</strong><br />
+Research scientist, Inserm<br />
+Paul-Brousse Hospital Paris, France<br />
+<a href="members/members_sj.html">Read more</a>
+</center>
+</div>
+</div>
+<div class="col-md-4">
+<br><br>
+<center>
+<div class="figure">
+<img src="pictures/remy.png" style="width:50.0%" />
+
+</div>
+<p><strong>Remy NICOLLE</strong><br />
+Research scientist, CIT Program<br />
+Ligue Contre le Cancer Paris, France<br />
+<a href="members/members_rn.html">Read more</a></p>
+</center>
+</div>
+<div class="col-md-4">
+<br><br>
+<center>
+<div class="figure">
+<img src="pictures/david.png" style="width:50.0%" />
+
+</div>
+<p><strong>David TAVEL</strong><br />
+Data Manager, CIT Program<br />
+Ligue Contre le Cancer Paris, France<br />
+<a href="members/members_dt.html">Read more</a></p>
+</center>
+</div>
+</div>
+<p><br></p>
 </div>
 
 
@@ -352,7 +409,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

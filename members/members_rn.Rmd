@@ -1,0 +1,8 @@
+---
+title: "Membres fondateurs"
+---
+
+![](../pictures/remy.png){width=10%}
+<br>
+
+After graduating in systems biology at the Paris-Saclay University, **Remy Nicolle** obtained his Ph.D. at the Institut Curie studying the transcriptional dysregulations driving bladder cancer. He joined the CIT in 2015 to focus on the genomics of pancreatic cancer.

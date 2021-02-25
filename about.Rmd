@@ -1,8 +1,79 @@
 ---
 title: "Présentation de GeBiCan"
+output:
+  html_document
 ---
 
 ## Membres fondateurs
 
-Say more about you here.
-plein de belles choses
+
+<div class = "row">
+  
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/mira.png){width=50%}
+
+
+**Mira AYADI**    
+Operational Director, CIT Program  
+Ligue Contre le Cancer Paris, France  
+[Read more](members/members_ma.html) 
+</center>
+</div>
+  
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/yuna.png){width=50%}
+
+
+**Yuna BLUM**    
+Research scientist, CNRS   
+GEO Team, IGDR Rennes, France  
+[Read more](members/members_yb.html) 
+
+</center>
+</div>
+  
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/sylvie.png){width=50%}
+
+**Sylvie JOB**   
+Research scientist, Inserm  
+Paul-Brousse Hospital Paris, France  
+[Read more](members/members_sj.html) 
+</center>
+</div>
+</div>
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/remy.png){width=50%}
+
+**Remy NICOLLE**   
+Research scientist, CIT Program  
+Ligue Contre le Cancer Paris, France  
+ [Read more](members/members_rn.html) 
+
+</center>
+</div>
+  
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/david.png){width=50%}
+
+**David TAVEL**   
+Data Manager, CIT Program  
+Ligue Contre le Cancer Paris, France  
+[Read more](members/members_dt.html) 
+
+</center>
+
+</div>
+</div>
+
+<br>
