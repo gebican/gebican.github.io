@@ -9,18 +9,7 @@ output:
 
 <div class = "row">
   
-<div class = "col-md-4">
-<br><br>
-<center>
-![](pictures/mira.png){width=50%}
 
-
-**Mira AYADI**    
-Operational Director, CIT Program  
-Ligue Contre le Cancer Paris, France  
-[Read more](members/members_ma.html) 
-</center>
-</div>
   
 <div class = "col-md-4">
 <br><br>
@@ -47,7 +36,6 @@ Paul-Brousse Hospital Paris, France
 [Read more](members/members_sj.html) 
 </center>
 </div>
-</div>
 <div class = "col-md-4">
 <br><br>
 <center>
@@ -58,6 +46,19 @@ Research scientist, CIT Program
 Ligue Contre le Cancer Paris, France  
  [Read more](members/members_rn.html) 
 
+</center>
+</div>
+</div>
+<div class = "col-md-4">
+<br><br>
+<center>
+![](pictures/mira.png){width=50%}
+
+
+**Mira AYADI**    
+Operational Director, CIT Program  
+Ligue Contre le Cancer Paris, France  
+[Read more](members/members_ma.html) 
 </center>
 </div>
   
