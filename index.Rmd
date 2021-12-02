@@ -27,6 +27,6 @@ Ensemble, nous nous sommes fixés plusieurs objectifs :
 ![](index_files/figure-html/tools2.png){width=4%}  Enfin, GeBiCan rassemble un ensemble d'**applications** et d'**outils** utiles à l'analyse de données génomiques.
 
 
-Si notre association vous intéresse, n'hésitez pas nous [contacter]().
+Si notre association vous intéresse, n'hésitez pas nous [contacter](gebican.asso@gmail.com).
 
-
+L'assocation et son site sont encore en construction ...
